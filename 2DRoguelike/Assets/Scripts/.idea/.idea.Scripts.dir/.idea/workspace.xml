@@ -11,11 +11,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/MainMenu.cs" />
+      <option value="$PROJECT_DIR$/PlayerMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tOf54uFFxYYu5CPBHPurChPE67" />
@@ -39,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622644879348</updated>
-      <workItem from="1622644895200" duration="1596000" />
+      <workItem from="1622644895200" duration="5548000" />
     </task>
     <servers />
   </component>
