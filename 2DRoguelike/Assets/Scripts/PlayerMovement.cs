@@ -20,7 +20,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        SetAnimatorMovement(direction);
+		if(direction.x != 0 || direction.y !=0)
+		{
+        	SetAnimatorMovement(direction);
+		} else {
+			anim.SetLayerWeight(1,0);
+		}
+
         transform.Translate(direction * speed * Time.deltaTime);
     }
 
@@ -30,28 +36,25 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            direction += Vector2.up;
-            
+            direction += Vector2.up;            
         }
         if (Input.GetKey(KeyCode.A))
         {
-            direction += Vector2.left;
-            
+            direction += Vector2.left;            
         }
         if (Input.GetKey(KeyCode.S))
         {
-            direction += Vector2.down;
-            
+            direction += Vector2.down;            
         }
         if (Input.GetKey(KeyCode.D))
         {
-            direction += Vector2.right;
-            
+            direction += Vector2.right;            
         }
     }
     
     private void SetAnimatorMovement(Vector2 direction)
     {
+		anim.SetLayerWeight(1,1);
         anim.SetFloat("xDir",direction.x);
         anim.SetFloat("yDir",direction.y);
     }
