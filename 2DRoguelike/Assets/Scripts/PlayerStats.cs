@@ -1,29 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class EnemyReceiveDamage : MonoBehaviour
+public class PlayerStats : MonoBehaviour
 {
+    public static PlayerStats playerStats;
+    public GameObject player;
     public float health;
     public float maxHealth;
 
-	public GameObject healthBar;
-	public Slider healthBarSlider;
+    void Awake()
+    {
+        if (playerStats != null)
+        {
+            Destroy(playerStats);
+        }
+        else
+        {
+            playerStats = this;
+        }
+        DontDestroyOnLoad(this);
+    }
 
     void Start()
     {
         health = maxHealth;
-		healthBar.SetActive(false);
     }
 
     public void DealDamage(float damage)
     {
-		healthBar.SetActive(true);
         health -= damage;
         CheckDeath();
-		healthBarSlider.value = CalculateHealthPercentage();
+    }
+
+    public void HealCharacter(float heal)
+    {
+        health += maxHealth;
+        CheckOverheal();
     }
 
     private void CheckOverheal()
@@ -32,18 +45,13 @@ public class EnemyReceiveDamage : MonoBehaviour
         {
             health = maxHealth;
         }
-		healthBarSlider.value = CalculateHealthPercentage();
     }
 
     private void CheckDeath()
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(player);
         }
     }
-
-	private float CalculateHealthPercentage(){
-		return (health/maxHealth);
-	}
 }
