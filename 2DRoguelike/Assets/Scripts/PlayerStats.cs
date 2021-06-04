@@ -10,8 +10,11 @@ public class PlayerStats : MonoBehaviour
     public GameObject player;
     public Text healthText;
     public Text manaText;
+    public Text coinText;
     public Slider healthSlider;
 
+    public int coins;
+    public int gems;
     public float health;
     public float maxHealth;
 
@@ -32,6 +35,7 @@ public class PlayerStats : MonoBehaviour
     {
         health = maxHealth;
         UpdateHealthBar();
+        UpdateCoinText();
     }
 
     public void DealDamage(float damage)
@@ -75,5 +79,10 @@ public class PlayerStats : MonoBehaviour
     {
         healthSlider.value = CalculateHealthPercentage();
         healthText.text = Mathf.Ceil(health).ToString() + "/" + Mathf.Ceil(maxHealth).ToString();
+    }
+
+    public void UpdateCoinText()
+    {
+        coinText.text = coins.ToString();
     }
 }

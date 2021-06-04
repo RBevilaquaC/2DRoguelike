@@ -16,7 +16,9 @@
     <setting file="file://$PROJECT_DIR$/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestEnemyProjectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PlayerStats.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrenctPickup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestSpell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FloatToPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestProjectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EnemyReceiveDamage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -30,10 +32,12 @@
       <option value="$PROJECT_DIR$/CameraFollowPlayer.cs" />
       <option value="$PROJECT_DIR$/PlayerStatus.cs" />
       <option value="$PROJECT_DIR$/TestEnemyProjectile.cs" />
-      <option value="$PROJECT_DIR$/EnemyReceiveDamage.cs" />
       <option value="$PROJECT_DIR$/TestEnemyShotting.cs" />
-      <option value="$PROJECT_DIR$/PlayerStats.cs" />
+      <option value="$PROJECT_DIR$/EnemyReceiveDamage.cs" />
+      <option value="$PROJECT_DIR$/FloatToPlayer.cs" />
       <option value="$PROJECT_DIR$/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/PlayerStats.cs" />
+      <option value="$PROJECT_DIR$/CurrenctPickup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tOf54uFFxYYu5CPBHPurChPE67" />
@@ -59,7 +63,7 @@
       <updated>1622644879348</updated>
       <workItem from="1622644895200" duration="5548000" />
       <workItem from="1622729086876" duration="8481000" />
-      <workItem from="1622806056996" duration="8059000" />
+      <workItem from="1622806056996" duration="12321000" />
     </task>
     <servers />
   </component>

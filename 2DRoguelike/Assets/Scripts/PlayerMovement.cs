@@ -90,4 +90,5 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("xDir",direction.x);
         anim.SetFloat("yDir",direction.y);
     }
+    
 }
