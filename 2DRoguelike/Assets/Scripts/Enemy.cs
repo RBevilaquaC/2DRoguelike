@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class EnemyReceiveDamage : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float health;
     public float maxHealth;

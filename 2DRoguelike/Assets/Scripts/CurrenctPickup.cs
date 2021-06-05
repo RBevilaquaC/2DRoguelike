@@ -10,7 +10,6 @@ public class CurrenctPickup : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print(other);
         if (other.tag == "Player")
         {
             if (currentObject == pickupObject.COIN)
